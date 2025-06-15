@@ -40,12 +40,12 @@ export const useGameCompletion = () => {
 	const queryClient = useQueryClient();
 
 	return useMutation<GameProps, unknown, string>({
-	  mutationFn: (gameId) => gameService.completeGame(gameId),
+	  mutationFn: (gameId: string) => gameService.completeGame(gameId),
 	  onSuccess: (data: GameProps) => {alert("Game Ended Successfully!");
 		queryClient.invalidateQueries({ queryKey: ["game", data._id] });
-
+		queryClient.invalidateQueries({ queryKey: ["tables"] });
 	  },
-	  onError: (err) => alert(`Failed Ending Game, Please make sure cashouts match all buyins: ${err}`),
+	  onError: (err: unknown) => alert(`Failed Ending Game, Please make sure cashouts match all buyins: ${err}`),
 	});
   };
 
@@ -57,7 +57,7 @@ export const useGameCompletion = () => {
 		onSuccess: (data: GameProps) => {alert("Buy In Updated Successfully!");
 			queryClient.invalidateQueries({ queryKey: ["game", data._id] });
 		},
-		onError: (err) => alert(`Failed To Updated Buy In, ${err}`),
+		onError: (err: unknown) => alert(`Failed To Updated Buy In, ${err}`),
 	});
 };
 
@@ -69,7 +69,7 @@ export const usePlayerCashOut = () => {
 		onSuccess: (data: GameProps) => {alert("Cash Out Updated Successfully!");
 			queryClient.invalidateQueries({ queryKey: ["game", data._id] });
 		},
-		onError: (err) => alert(`Failed To Updated Cash Out, ${err}`),
+		onError: (err: unknown) => alert(`Failed To Updated Cash Out, ${err}`),
 	});
 };
   
