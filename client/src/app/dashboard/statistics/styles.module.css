@@ -1,0 +1,78 @@
+.title {
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	color: rgba(60, 60, 60);
+	text-align: center;
+	font-size: 2.25rem;
+	font-weight: bold;
+}
+
+.statsContainer {
+	padding: 1rem;
+}
+
+.statsGrid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.25rem;
+	margin-bottom: 2.5rem;
+}
+
+.statCard {
+	border-radius: 0.5rem;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+	padding: 1.5rem;
+	text-align: center;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	cursor: default;
+}
+
+.statCard:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.statTitle {
+	margin: 0 0 1rem 0;
+	color: #111111;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.statValueBase {
+	margin: 0;
+	font-size: 1.75rem;
+	font-weight: 700;
+	color: #111111;
+}
+
+.statValuePositive {
+	color: #3f8600;
+}
+.statValueNegative {
+	color: #cf1322;
+}
+
+.chartsGrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+	justify-items: center;
+}
+
+.chartWrapper {
+	width: 100%;
+	min-height: 400px;
+	height: 100%;
+}
+
+.error {
+	text-align: center;
+	padding: 2rem;
+	color: #fc8181;
+	background-color: rgba(254, 178, 178, 0.05);
+	border: 1px solid #fc8181;
+	border-radius: 8px;
+	margin: 2rem 0;
+}

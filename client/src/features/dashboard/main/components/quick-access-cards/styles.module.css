@@ -1,0 +1,79 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
+	padding: 1rem 0;
+}
+
+.card {
+	border-radius: 0.75rem;
+	padding: 2rem;
+	background: #ffffff; /* <-- neutral background */
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); /* default, no shadow yet */
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+	border: 1px solid #eee;
+}
+
+.card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.icon {
+	width: 2.5rem;
+	height: 2.5rem;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.15);
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	backdrop-filter: blur(8px);
+}
+
+.cardTitle {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #111827;
+	margin-left: 1rem;
+}
+
+.cardDescription {
+	font-size: 1rem;
+	color: #6b7280;
+	margin-bottom: 1.5rem;
+}
+
+.button {
+	display: inline-block;
+	margin-left: 0px;
+	margin-bottom: 0px; /* <-- pushes button to bottom */
+	padding: 0.75rem 1.5rem;
+	border-radius: 2rem;
+	font-weight: 600;
+	font-size: 0.9rem;
+	text-align: center;
+	color: black;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:hover {
+	transform: scale(1.05);
+}
+
+/* Colorful Shadows */
+.purple500 {
+	box-shadow: 0 8px 16px rgba(139, 92, 246, 0.9);
+}
+
+.blue500 {
+	box-shadow: 0 8px 16px rgba(59, 130, 246, 0.9);
+}
+
+.red500 {
+	box-shadow: 0 8px 16px rgba(239, 68, 68, 0.9);
+}

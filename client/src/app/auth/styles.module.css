@@ -1,0 +1,70 @@
+.authContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #f0f2f5;
+	font-family: "Arial", sans-serif;
+	padding: 16px;
+}
+
+.authCard {
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	width: 360px;
+	max-width: 100%;
+	padding: 24px;
+	box-sizing: border-box;
+}
+
+.tabsWrapper {
+	margin-bottom: 16px;
+}
+
+.antTabsOverride :global(.ant-tabs-nav) {
+	margin: 0;
+	padding: 0 16px;
+}
+
+.antTabsOverride :global(.ant-tabs-nav-list) {
+	margin: 0;
+}
+
+.antTabsOverride :global(.ant-tabs-tab) {
+	margin: 0;
+	padding: 8px 16px;
+	font-size: 16px;
+	color: #555555;
+	transition: color 0.2s ease;
+}
+
+.antTabsOverride :global(.ant-tabs-tab:hover) {
+	color: #1890ff;
+}
+
+.antTabsOverride :global(.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn) {
+	color: #1890ff;
+	font-weight: 500;
+}
+
+.antTabsOverride :global(.ant-tabs-ink-bar) {
+	background-color: #1890ff;
+	height: 2px;
+}
+
+.authFormWrapper {
+	padding: 1rem;
+}
+
+.ant-form-item-explain-error {
+	color: #f5222d;
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+.errorText {
+	color: #f5222d;
+	font-size: 12px;
+	margin-top: 4px;
+}

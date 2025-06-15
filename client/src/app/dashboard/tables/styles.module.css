@@ -1,0 +1,15 @@
+.tablesContainer {
+	padding: 1rem;
+}
+
+.headerButtons {
+	display: flex;
+	margin-top: 1rem;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.createTableButton {
+	padding-right: 0.5rem;
+}

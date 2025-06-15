@@ -1,0 +1,101 @@
+.statsGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.statCard {
+	background-color: #ffffff;
+	border-radius: 0.75rem;
+	border: 1px solid #e5e7eb;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+	padding: 1.5rem;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+}
+
+.statCard:hover {
+	transform: translateY(-5px);
+}
+
+.statHeader {
+	display: flex;
+	align-items: center;
+}
+
+.iconContainer {
+	flex-shrink: 0;
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 0.5rem;
+	padding: 0.75rem;
+	backdrop-filter: blur(8px);
+}
+
+.icon {
+	height: 1.75rem;
+	width: 1.75rem;
+	color: #111827;
+}
+
+.statInfo {
+	margin-left: 1.25rem;
+	flex: 1;
+	min-width: 0;
+}
+
+.statName {
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #6b7280;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.statValue {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #111827;
+}
+
+.changeIndicator {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	font-size: 0.875rem;
+}
+
+.increase {
+	color: #10b981;
+}
+
+.decrease {
+	color: #ef4444;
+}
+
+.changeValue {
+	font-weight: 500;
+}
+
+.changeLabel {
+	margin-left: 0.5rem;
+	color: #9ca3af;
+}
+
+/* Colorful Shadows */
+.purpleShadow {
+	box-shadow: 0 8px 16px rgba(139, 92, 246, 0.3);
+}
+
+.blueShadow {
+	box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+}
+
+.redShadow {
+	box-shadow: 0 8px 16px rgba(239, 68, 68, 0.3);
+}
+
+.orangeShadow {
+	box-shadow: 0 8px 16px rgba(234, 88, 12, 0.3);
+}
